@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}">
+    {{ page.date | date: "%d %B %Y" }}
+  </time>
+
+  {{ content }}
+
+  <!-- Навигация: предыдущий / следующий -->
+  <div class="post-navigation">
+    {% if page.next %}
+      <a href="{{ page.next.url }}">← {{ page.next.title }}</a>
+    {% endif %}
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}" style="float: right;">{{ page.previous.title }} →</a>
+    {% endif %}
+  </div>
+
+  <!-- Комментарии -->
+  <div id="comments">
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ site.repository }}"
+      data-repo-id="YOUR_REPO_ID"
+      data-category="Announcements"
+      data-category-id="YOUR_CATEGORY_ID"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="ru"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</article>
