@@ -1,0 +1,12 @@
+title: Мой дневной блог
+author: Твоё Имя
+description: Блог с ежедневными записями
+
+# Настройки Jekyll
+theme: minima  # можно заменить, но пока используем простой
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Для utterances/giscus
+repository: yourname/yourname.github.io  # замени на своё
