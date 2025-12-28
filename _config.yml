@@ -9,5 +9,5 @@ plugins:
   - jekyll-sitemap
 
 # Для utterances/giscus
-repository: ivanaim50/ivanaim50.github.io  # замени на своё
+repository: my_mentor_ai/ivanaim50.github.io  # замени на своё
 #https://ivanai50.github.io/my_mentor_ai/
