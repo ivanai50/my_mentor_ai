@@ -7,6 +7,8 @@ theme: minima  # можно заменить, но пока используем
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+baseurl: /my_mentor_ai
+url: https://ivanai50.github.io
 
 # Для utterances/giscus
 repository: my_mentor_ai/ivanai50.github.io  # замени на своё
