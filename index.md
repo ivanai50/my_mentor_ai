@@ -1,6 +1,6 @@
-<!-- index.html или index.md с front matter -->
 ---
 layout: default
+title: Главная
 ---
 
 <h1>Лента записей</h1>
